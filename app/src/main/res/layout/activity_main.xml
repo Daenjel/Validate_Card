@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bool"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="30sp"
+        android:layout_above="@id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Valid or Invalid" />
+
+    <LinearLayout
+        android:id="@+id/card"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+    <EditText
+        android:id="@+id/fF"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:hint="@string/hint"
+        android:maxLength="4"
+        android:layout_marginLeft="@dimen/dis"
+        android:layout_marginStart="@dimen/dis"
+        android:textColor="@android:color/black"
+        android:background="@drawable/my_border"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/fL"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:maxLength="1"
+        android:inputType="number"
+        android:hint="@string/iint"
+        android:textColor="@android:color/holo_green_dark"
+        android:background="@drawable/my_border"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dis"
+        android:layout_marginEnd="@dimen/dis"/>
+
+        <EditText
+            android:id="@+id/sF"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:hint="@string/hint"
+            android:maxLength="4"
+            android:layout_marginLeft="@dimen/dis"
+            android:layout_marginStart="@dimen/dis"
+            android:textColor="@android:color/black"
+            android:background="@drawable/my_border"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/sL"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:hint="@string/iint"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:background="@drawable/my_border"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dis"
+            android:layout_marginEnd="@dimen/dis"/>
+        <EditText
+            android:id="@+id/tF"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:hint="@string/hint"
+            android:maxLength="4"
+            android:layout_marginLeft="@dimen/dis"
+            android:layout_marginStart="@dimen/dis"
+            android:textColor="@android:color/black"
+            android:background="@drawable/my_border"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/tL"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:hint="@string/iint"
+            android:maxLength="1"
+            android:textColor="@android:color/holo_green_dark"
+            android:background="@drawable/my_border"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/dis"
+            android:layout_marginEnd="@dimen/dis" />
+        <EditText
+            android:id="@+id/f4F"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:hint="@string/hint"
+            android:maxLength="4"
+            android:layout_marginLeft="@dimen/dis"
+            android:layout_marginStart="@dimen/dis"
+            android:textColor="@android:color/black"
+            android:background="@drawable/my_border"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/f4L"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:hint="@string/iint"
+            android:textStyle="bold"
+            android:maxLength="1"
+            android:textColor="@android:color/holo_green_dark"
+            android:background="@drawable/my_border"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_below="@id/card"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="#03A9F4"
+        android:layout_gravity="center_horizontal|center_vertical"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnVal"
+            android:text="Validate"
+            android:background="@android:color/transparent"
+            android:textStyle="normal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
