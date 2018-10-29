@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
 
         //button click to valid the credit number
         btnVal.setOnClickListener(new View.OnClickListener() {
-            @TargetApi(Build.VERSION_CODES.N)
             @Override
             public void onClick(View view) {
                 isFirstValid(); //verifies if the first set of digits are valid
@@ -203,10 +202,8 @@ public class MainActivity extends AppCompatActivity {
             lastDigit = Integer.parseInt(numberL); //convert user input to integer
             if(lastDigit == latest){  //comparing if the user fifth input and the resultant fifth digit match
                 //if they match?
-                validate.setText(val[0]);//set text valid number from the string array
                 sF.setBackgroundResource(R.drawable.my_border);//set editText border default to represent valid number
                 sL.setBackgroundResource(R.drawable.my_border);//set editText border default to represent valid number
-                validate.setTextColor(Color.GREEN);//set text color green
             }else{
                 //if they do not match?
                 validate.setText(val[1]);//set text invalid number from the string array
@@ -282,10 +279,8 @@ public class MainActivity extends AppCompatActivity {
             lastDigit = Integer.parseInt(numberL); //convert user input to integer
             if(lastDigit == latest){  //comparing if the user fifth input and the resultant fifth digit match
                 //if they match?
-                validate.setText(val[0]);//set text valid number from the string array
                 tF.setBackgroundResource(R.drawable.my_border);//set editText border default to represent valid number
                 tL.setBackgroundResource(R.drawable.my_border);//set editText border default to represent valid number
-                validate.setTextColor(Color.GREEN);//set text color green
             }else{
                 //if they do not match?
                 validate.setText(val[1]);//set text invalid number from the string array
@@ -361,10 +356,8 @@ public class MainActivity extends AppCompatActivity {
             lastDigit = Integer.parseInt(numberL); //convert user input to integer
             if(lastDigit == latest){  //comparing if the user fifth input and the resultant fifth digit match
                 //if they match?
-                validate.setText(val[0]);//set text valid number from the string array
                 f4F.setBackgroundResource(R.drawable.my_border);//set editText border default to represent valid number
                 f4L.setBackgroundResource(R.drawable.my_border);//set editText border default to represent valid number
-                validate.setTextColor(Color.GREEN);//set text color green
             }else{
                 //if they do not match?
                 validate.setText(val[1]);//set text invalid number from the string array
@@ -380,7 +373,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void isValid(){
+    /*public void isValid(){
         boolean flag = false;
         int draw = R.drawable.my_border;
         String lay = String.valueOf(draw);
@@ -394,5 +387,5 @@ public class MainActivity extends AppCompatActivity {
 
         }
         //return flag;
-    }
+    }*/
 }
